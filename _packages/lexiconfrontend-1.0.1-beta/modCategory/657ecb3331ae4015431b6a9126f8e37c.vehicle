@@ -1,0 +1,101 @@
+<?php return array (
+  'unique_key' => 'category',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'related_objects' => 
+  array (
+    'Plugins' => 
+    array (
+      'b22c841133bf49882a04d2e452d4a889' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modPlugin',
+        'object' => '{"id":null,"source":1,"property_preprocess":0,"name":"lexiconFrontend","description":"","editor_type":0,"category":0,"cache_type":0,"plugincode":"$eventName = $modx->event->name;\\nswitch ($eventName) {\\n    case \'OnLoadWebDocument\':\\n        $modx->lexicon->load(\'lexiconfrontend:default\');\\n        $modx->lexicon->load(\'lexiconfrontend:meta\');\\n        break;\\n}","locked":0,"properties":null,"disabled":0,"moduleguid":"","static":0,"static_file":"core\\/components\\/lexiconfrontend\\/elements\\/plugins\\/plugin.lexiconfrontend.php","content":"$eventName = $modx->event->name;\\nswitch ($eventName) {\\n    case \'OnLoadWebDocument\':\\n        $modx->lexicon->load(\'lexiconfrontend:default\');\\n        $modx->lexicon->load(\'lexiconfrontend:meta\');\\n        break;\\n}"}',
+        'guid' => '6c88ffbc748063f7be26ae431f5ee6db',
+        'native_key' => NULL,
+        'signature' => '772355cf4b144827793522ecbec4fc38',
+        'related_objects' => 
+        array (
+          'PluginEvents' => 
+          array (
+            'bdeec1535764bc93b8e3758b2ae58b82' => 
+            array (
+              'preserve_keys' => true,
+              'update_object' => true,
+              'unique_key' => 
+              array (
+                0 => 'pluginid',
+                1 => 'event',
+              ),
+              'class' => 'modPluginEvent',
+              'object' => '{"pluginid":0,"event":"OnLoadWebDocument","priority":0,"propertyset":0}',
+              'guid' => '1d298361a85070a9b19bc0b1cc369a3a',
+              'native_key' => 
+              array (
+                0 => 0,
+                1 => 'OnLoadWebDocument',
+              ),
+              'signature' => '917c4e4e73e10ee657ddf97e5e1edd4f',
+            ),
+          ),
+        ),
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'Snippets' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => false,
+      'unique_key' => 'name',
+    ),
+    'Chunks' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => false,
+      'unique_key' => 'name',
+    ),
+    'Plugins' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'PluginEvents' => 
+    array (
+      'preserve_keys' => true,
+      'update_object' => true,
+      'unique_key' => 
+      array (
+        0 => 'pluginid',
+        1 => 'event',
+      ),
+    ),
+  ),
+  'namespace' => 'lexiconfrontend',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"lexiconfrontend-1.0.1-beta\\/modCategory\\/657ecb3331ae4015431b6a9126f8e37c\\/0\\/","target":"return MODX_ASSETS_PATH . \'components\\/\';","name":"lexiconfrontend"}',
+    ),
+    1 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"lexiconfrontend-1.0.1-beta\\/modCategory\\/657ecb3331ae4015431b6a9126f8e37c\\/1\\/","target":"return MODX_CORE_PATH . \'components\\/\';","name":"lexiconfrontend"}',
+    ),
+  ),
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'c67ace26eb7be302b97d31e2eaa94fc4',
+  'package' => 'modx',
+  'class' => 'modCategory',
+  'signature' => '657ecb3331ae4015431b6a9126f8e37c',
+  'native_key' => NULL,
+  'object' => '{"id":null,"parent":0,"category":"lexiconFrontend"}',
+);
