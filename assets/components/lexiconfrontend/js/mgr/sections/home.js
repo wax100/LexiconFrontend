@@ -1,3 +1,10 @@
+/*Ext.onReady(function() {
+    MODx.load({
+        xtype : 'lexiconfrontend-page-home'
+    });
+});*/
+
+
 lexiconFrontend.page.Home = function(config) {
     config = config || {};
     Ext.applyIf(config,{

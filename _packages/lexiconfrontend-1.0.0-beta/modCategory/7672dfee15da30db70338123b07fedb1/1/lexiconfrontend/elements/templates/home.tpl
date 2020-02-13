@@ -1,1 +1,0 @@
-<div id="lexiconfrontend-panel-home-div"></div>

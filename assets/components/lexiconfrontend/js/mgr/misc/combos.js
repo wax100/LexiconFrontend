@@ -56,9 +56,9 @@ MODx.combo.lexiconFrontendLanguage = function(config) {
         ,editable: false
         ,allowBlank: false
         ,pageSize: 20
-        ,url: MODx.config.connectors_url+'system/language.php'
+        ,url: MODx.config.connectors_url+'index.php'
         ,baseParams: {
-            action: 'getList'
+            action: 'system/language/getlist'
             ,'namespace': 'lexiconfrontend'
         }
     });
